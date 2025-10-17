@@ -1,6 +1,6 @@
 ' puml-theme-simplex.puml
 ' Source palette: Bootswatch "Simplex" for Bootstrap 5.
-' Primary refs: Simplex showcase page and variables links.  [oai_citation:0‡Bootswatch: Simplex.html](sediment://file_00000000b5a0622faa07e05ecddba670)  [oai_citation:1‡Bootswatch: Simplex.html](sediment://file_00000000b5a0622faa07e05ecddba670)
+' https://bootswatch.com/simplex/
 
 ' ===== Palette =====
 !define SIMPLEX_PRIMARY   #D9230F
@@ -187,8 +187,8 @@ skinparam stereotype {
   CFontColor<<dark>> #FFFFFF
 }
 
-' ===== Misc ======
-skinparam Rectangle {
+' ===== Misc =====
+skinparam rectangle {
   BackgroundColor SIMPLEX_LIGHT
   BorderColor SIMPLEX_BORDER
   FontColor SIMPLEX_BODY
