@@ -5,7 +5,7 @@ description: A light theme based on the Bootswatch Simplex color palette
 author: [Your Name]
 ---
 
-!$SIMPLEX_PRIMARY   = "#D9230F"
+!$SIMPLEX_PRIMARY   = "#C94D00"
 !$SIMPLEX_BODY      = "#212529"
 !$SIMPLEX_BG        = "#FFFFFF"
 !$SIMPLEX_WHITE     = "#FFFFFF"
