@@ -1,4 +1,4 @@
-' puml-theme-simplex.puml
+' puml-theme-simplex-corrected-v2.puml
 ' Source palette: Bootswatch "Simplex" for Bootstrap 5.
 ' https://bootswatch.com/simplex/
 
@@ -20,10 +20,8 @@
 skinparam backgroundColor SIMPLEX_BG
 skinparam shadowing false
 skinparam DefaultFontName "Inter, Segoe UI, Roboto, Helvetica, Arial"
-
 skinparam defaultTextAlignment left
 skinparam Monochrome false
-
 skinparam ArrowColor SIMPLEX_DARK
 skinparam ArrowThickness 1
 skinparam LineColor SIMPLEX_BORDER
@@ -57,6 +55,9 @@ skinparam sequence {
   DividerBackgroundColor SIMPLEX_PRIMARY
   DividerBorderColor SIMPLEX_PRIMARY
   DividerFontColor #FFFFFF
+  NoteBackgroundColor SIMPLEX_LIGHT
+  NoteBorderColor SIMPLEX_BORDER
+  NoteFontColor SIMPLEX_BODY
 }
 
 ' ===== Activity =====
@@ -136,51 +137,41 @@ skinparam timing {
 }
 
 ' ===== Colors for stereotypes (Bootstrap-like badges) =====
-' Apply with: <<primary>>, <<secondary>>, <<success>>, etc.
-' Works on classes, components, nodes, activities, use cases, notes.
-' Primary
 skinparam stereotype {
   CBackgroundColor<<primary>> SIMPLEX_PRIMARY
   CBorderColor<<primary>> SIMPLEX_PRIMARY
   CFontColor<<primary>> #FFFFFF
 }
-' Secondary
 skinparam stereotype {
   CBackgroundColor<<secondary>> SIMPLEX_SECONDARY
   CBorderColor<<secondary>> SIMPLEX_SECONDARY
   CFontColor<<secondary>> #FFFFFF
 }
-' Success
 skinparam stereotype {
   CBackgroundColor<<success>> SIMPLEX_SUCCESS
   CBorderColor<<success>> SIMPLEX_SUCCESS
   CFontColor<<success>> #FFFFFF
 }
-' Info
 skinparam stereotype {
   CBackgroundColor<<info>> SIMPLEX_INFO
   CBorderColor<<info>> SIMPLEX_INFO
   CFontColor<<info>> #0B2E38
 }
-' Warning
 skinparam stereotype {
   CBackgroundColor<<warning>> SIMPLEX_WARNING
   CBorderColor<<warning>> SIMPLEX_WARNING
   CFontColor<<warning>> #3A2F05
 }
-' Danger
 skinparam stereotype {
   CBackgroundColor<<danger>> SIMPLEX_DANGER
   CBorderColor<<danger>> SIMPLEX_DANGER
   CFontColor<<danger>> #FFFFFF
 }
-' Light
 skinparam stereotype {
   CBackgroundColor<<light>> SIMPLEX_LIGHT
   CBorderColor<<light>> SIMPLEX_BORDER
   CFontColor<<light>> SIMPLEX_BODY
 }
-' Dark
 skinparam stereotype {
   CBackgroundColor<<dark>> SIMPLEX_DARK
   CBorderColor<<dark>> SIMPLEX_DARK
