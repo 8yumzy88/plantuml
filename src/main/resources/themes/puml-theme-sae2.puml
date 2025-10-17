@@ -1,6 +1,6 @@
 ' puml-theme-sae2.puml
-' A light theme based on the Bootswatch "Simplex" palette,
-' with a structure that ensures all diagram elements are defined.
+' A light theme based on the Bootswatch "Simplex" palette.
+' This theme is structured to match the working "sae" dark theme.
 
 ' ===== Palette: Bootswatch Simplex =====
 !define SIMPLEX_PRIMARY   #D9230F
@@ -38,92 +38,49 @@ skinparam title {
 ' ===== Actors & Use Cases =====
 skinparam actor {
   BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+  BorderColor SIMPLEX_PRIMARY
 }
 skinparam usecase {
   BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+  BorderColor SIMPLEX_PRIMARY
 }
 
 ' ===== Activities & Partitions =====
 skinparam activity {
   BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
-  BarColor SIMPLEX_SECONDARY
+  BorderColor SIMPLEX_INFO
+  BarColor SIMPLEX_PRIMARY
   ArrowColor SIMPLEX_BODY
 }
 skinparam partition {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+  BackgroundColor SIMPLEX_BG
+  BorderColor SIMPLEX_LIGHT
 }
 
 ' ===== Sequence Diagram =====
 skinparam sequence {
   ParticipantBackgroundColor SIMPLEX_LIGHT
-  ParticipantBorderColor SIMPLEX_BORDER
-  LifeLineBorderColor SIMPLEX_BORDER
-  LifeLineBackgroundColor SIMPLEX_DANGER
+  ParticipantBorderColor SIMPLEX_PRIMARY
+  LifeLineBorderColor SIMPLEX_INFO
+  LifeLineBackgroundColor SIMPLEX_SECONDARY
   GroupBackgroundColor SIMPLEX_LIGHT
   GroupBorderColor SIMPLEX_PRIMARY
   ReferenceBackgroundColor SIMPLEX_LIGHT
-  ReferenceBorderColor SIMPLEX_BORDER
+  ReferenceBorderColor SIMPLEX_BODY
   ArrowColor SIMPLEX_BODY
-  DividerBackgroundColor SIMPLEX_SECONDARY
-  DividerBorderColor SIMPLEX_BORDER
-  ActorBorderColor SIMPLEX_BORDER
+  DividerBackgroundColor SIMPLEX_PRIMARY
+  DividerBorderColor SIMPLEX_PRIMARY
+  DividerFontColor #FFFFFF
+  ActorBorderColor SIMPLEX_PRIMARY
   ActorBackgroundColor SIMPLEX_LIGHT
   NoteBackgroundColor SIMPLEX_LIGHT
   NoteBorderColor SIMPLEX_BORDER
   NoteFontColor SIMPLEX_BODY
-  ParticipantFontColor SIMPLEX_BODY
-  ActorFontColor SIMPLEX_BODY
 }
 
 ' ===== Other Elements =====
 skinparam rectangle {
   BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+  BorderColor SIMPLEX_PRIMARY
   FontColor SIMPLEX_BODY
-}
-
-' ===== Stereotypes (Bootstrap-like badges) =====
-skinparam stereotype {
-  CBackgroundColor<<primary>> SIMPLEX_PRIMARY
-  CBorderColor<<primary>> SIMPLEX_PRIMARY
-  CFontColor<<primary>> #FFFFFF
-}
-skinparam stereotype {
-  CBackgroundColor<<secondary>> SIMPLEX_SECONDARY
-  CBorderColor<<secondary>> SIMPLEX_SECONDARY
-  CFontColor<<secondary>> #FFFFFF
-}
-skinparam stereotype {
-  CBackgroundColor<<success>> SIMPLEX_SUCCESS
-  CBorderColor<<success>> SIMPLEX_SUCCESS
-  CFontColor<<success>> #FFFFFF
-}
-skinparam stereotype {
-  CBackgroundColor<<info>> SIMPLEX_INFO
-  CBorderColor<<info>> SIMPLEX_INFO
-  CFontColor<<info>> #0B2E38
-}
-skinparam stereotype {
-  CBackgroundColor<<warning>> SIMPLEX_WARNING
-  CBorderColor<<warning>> SIMPLEX_WARNING
-  CFontColor<<warning>> #3A2F05
-}
-skinparam stereotype {
-  CBackgroundColor<<danger>> SIMPLEX_DANGER
-  CBorderColor<<danger>> SIMPLEX_DANGER
-  CFontColor<<danger>> #FFFFFF
-}
-skinparam stereotype {
-  CBackgroundColor<<light>> SIMPLEX_LIGHT
-  CBorderColor<<light>> SIMPLEX_BORDER
-  CFontColor<<light>> SIMPLEX_BODY
-}
-skinparam stereotype {
-  CBackgroundColor<<dark>> SIMPLEX_DARK
-  CBorderColor<<dark>> SIMPLEX_DARK
-  CFontColor<<dark>> #FFFFFF
 }
