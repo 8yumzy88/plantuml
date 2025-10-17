@@ -232,7 +232,7 @@ skinparam sequence {
 	''
 	DividerBackgroundColor $DARK
     DividerBorderColor $DARK
-    DividerBorderThickness 2
+    DividerBorderThickness 6
     DividerFontColor $LIGHT
 	''
 	ReferenceBackgroundColor $BGCOLOR
