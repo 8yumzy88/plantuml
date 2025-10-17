@@ -1,8 +1,8 @@
 ' puml-theme-sae2.puml
-' Source palette: Bootswatch "Simplex" for Bootstrap 5.
-' https://bootswatch.com/simplex/
+' A light theme based on the Bootswatch "Simplex" palette,
+' with a structure that ensures all diagram elements are defined.
 
-' ===== Palette =====
+' ===== Palette: Bootswatch Simplex =====
 !define SIMPLEX_PRIMARY   #D9230F
 !define SIMPLEX_SECONDARY #6C757D
 !define SIMPLEX_SUCCESS   #5CB85C
@@ -12,131 +12,81 @@
 !define SIMPLEX_LIGHT     #F8F9FA
 !define SIMPLEX_DARK      #212529
 !define SIMPLEX_BODY      #212529
-!define SIMPLEX_MUTED     #6C757D
 !define SIMPLEX_BORDER    #DEE2E6
 !define SIMPLEX_BG        #FFFFFF
 
 ' ===== Base =====
 skinparam backgroundColor SIMPLEX_BG
 skinparam shadowing false
-skinparam DefaultFontName "Inter, Segoe UI, Roboto, Helvetica, Arial"
-skinparam defaultTextAlignment left
-skinparam Monochrome false
-skinparam ArrowColor SIMPLEX_DARK
-skinparam ArrowThickness 1
-skinparam LineColor SIMPLEX_BORDER
 
-' ===== Titles / Header =====
-skinparam TitleFontColor SIMPLEX_BODY
-skinparam TitleFontSize 20
-skinparam TitleBorderColor SIMPLEX_BORDER
-skinparam TitleBackgroundColor SIMPLEX_LIGHT
-
-' ===== Notes =====
-skinparam NoteBackgroundColor SIMPLEX_LIGHT
-skinparam NoteBorderColor SIMPLEX_BORDER
-skinparam NoteFontColor SIMPLEX_BODY
-
-' ===== Legend =====
-skinparam LegendBackgroundColor SIMPLEX_LIGHT
-skinparam LegendBorderColor SIMPLEX_BORDER
-skinparam LegendFontColor SIMPLEX_BODY
-
-' ===== Sequence =====
-skinparam sequence {
-  ArrowColor SIMPLEX_DARK
-  LifeLineBorderColor SIMPLEX_BORDER
-  LifeLineBackgroundColor SIMPLEX_LIGHT
-  ParticipantBorderColor SIMPLEX_BORDER
-  ParticipantBackgroundColor SIMPLEX_LIGHT
-  ParticipantFontColor SIMPLEX_BODY
-  BoxBackgroundColor SIMPLEX_LIGHT
-  BoxBorderColor SIMPLEX_BORDER
-  DividerBackgroundColor SIMPLEX_PRIMARY
-  DividerBorderColor SIMPLEX_PRIMARY
-  DividerFontColor #FFFFFF
-  NoteBackgroundColor SIMPLEX_LIGHT
-  NoteBorderColor SIMPLEX_BORDER
-  NoteFontColor SIMPLEX_BODY
-}
-
-' ===== Activity =====
-skinparam activity {
-  BackgroundColor SIMPLEX_LIGHT
-  BarColor SIMPLEX_SECONDARY
-  BorderColor SIMPLEX_BORDER
-  DiamondBackgroundColor SIMPLEX_INFO
-  DiamondBorderColor SIMPLEX_INFO
-  StartColor SIMPLEX_SUCCESS
-  EndColor SIMPLEX_DANGER
-}
-
-' ===== Class / Object =====
-skinparam class {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+' ===== Defaults =====
+skinparam default {
   FontColor SIMPLEX_BODY
-  ArrowColor SIMPLEX_DARK
-}
-skinparam object {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
+  FontName "Inter, Segoe UI, Roboto, Helvetica, Arial"
+  FontSize 12
 }
 
-' ===== Component / Node / Package =====
-skinparam component {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
+' ===== Titles =====
+skinparam title {
   FontColor SIMPLEX_BODY
-}
-skinparam node {
-  BackgroundColor SIMPLEX_LIGHT
+  FontSize 18
+  FontName "Inter-Bold, Segoe UI-Bold, Roboto-Bold, Helvetica-Bold, Arial-Bold"
+  BackgroundColor SIMPLEX_BG
   BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
-}
-skinparam package {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
 }
 
-' ===== Use Case / Actor =====
-skinparam usecase {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
-}
+' ===== Actors & Use Cases =====
 skinparam actor {
   BackgroundColor SIMPLEX_LIGHT
   BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
+}
+skinparam usecase {
+  BackgroundColor SIMPLEX_LIGHT
+  BorderColor SIMPLEX_BORDER
 }
 
-' ===== State =====
-skinparam state {
+' ===== Activities & Partitions =====
+skinparam activity {
+  BackgroundColor SIMPLEX_LIGHT
+  BorderColor SIMPLEX_BORDER
+  BarColor SIMPLEX_SECONDARY
+  ArrowColor SIMPLEX_BODY
+}
+skinparam partition {
+  BackgroundColor SIMPLEX_LIGHT
+  BorderColor SIMPLEX_BORDER
+}
+
+' ===== Sequence Diagram =====
+skinparam sequence {
+  ParticipantBackgroundColor SIMPLEX_LIGHT
+  ParticipantBorderColor SIMPLEX_BORDER
+  LifeLineBorderColor SIMPLEX_BORDER
+  LifeLineBackgroundColor SIMPLEX_DANGER
+  GroupBackgroundColor SIMPLEX_LIGHT
+  GroupBorderColor SIMPLEX_PRIMARY
+  ReferenceBackgroundColor SIMPLEX_LIGHT
+  ReferenceBorderColor SIMPLEX_BORDER
+  ArrowColor SIMPLEX_BODY
+  DividerBackgroundColor SIMPLEX_SECONDARY
+  DividerBorderColor SIMPLEX_BORDER
+  ActorBorderColor SIMPLEX_BORDER
+  ActorBackgroundColor SIMPLEX_LIGHT
+  NoteBackgroundColor SIMPLEX_LIGHT
+  NoteBorderColor SIMPLEX_BORDER
+  NoteFontColor SIMPLEX_BODY
+  ParticipantFontColor SIMPLEX_BODY
+  ActorFontColor SIMPLEX_BODY
+}
+
+' ===== Other Elements =====
+skinparam rectangle {
   BackgroundColor SIMPLEX_LIGHT
   BorderColor SIMPLEX_BORDER
   FontColor SIMPLEX_BODY
-  StartColor SIMPLEX_SUCCESS
-  EndColor SIMPLEX_DANGER
 }
 
-' ===== Timing / Gantt =====
-skinparam gantt {
-  ArrowColor SIMPLEX_DARK
-  LineColor SIMPLEX_BORDER
-  TaskBorderColor SIMPLEX_BORDER
-  TaskBackgroundColor SIMPLEX_INFO
-  TodayLineColor SIMPLEX_DANGER
-}
-skinparam timing {
-  BackgroundColor SIMPLEX_LIGHT
-  LineColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
-}
-
-' ===== Colors for stereotypes (Bootstrap-like badges) =====
+' ===== Stereotypes (Bootstrap-like badges) =====
 skinparam stereotype {
   CBackgroundColor<<primary>> SIMPLEX_PRIMARY
   CBorderColor<<primary>> SIMPLEX_PRIMARY
@@ -177,16 +127,3 @@ skinparam stereotype {
   CBorderColor<<dark>> SIMPLEX_DARK
   CFontColor<<dark>> #FFFFFF
 }
-
-' ===== Misc =====
-skinparam rectangle {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_BORDER
-  FontColor SIMPLEX_BODY
-}
-skinparam PartitionBorderColor SIMPLEX_BORDER
-skinparam PartitionBackgroundColor SIMPLEX_LIGHT
-
-' ===== Links / URLs =====
-skinparam HyperlinkColor SIMPLEX_PRIMARY
-skinparam HyperlinkUnderline true
