@@ -1,86 +1,86 @@
-' puml-theme-sae2.puml
-' A light theme based on the Bootswatch "Simplex" palette.
-' This theme is structured to match the working "sae" dark theme.
+---
+name: sae2
+display_name: SAE Simplex Light
+description: A light theme based on the Bootswatch Simplex color palette
+author: [Your Name]
+---
 
-' ===== Palette: Bootswatch Simplex =====
-!define SIMPLEX_PRIMARY   #D9230F
-!define SIMPLEX_SECONDARY #6C757D
-!define SIMPLEX_SUCCESS   #5CB85C
-!define SIMPLEX_INFO      #5BC0DE
-!define SIMPLEX_WARNING   #F0AD4E
-!define SIMPLEX_DANGER    #D9534F
-!define SIMPLEX_LIGHT     #F8F9FA
-!define SIMPLEX_DARK      #212529
-!define SIMPLEX_BODY      #212529
-!define SIMPLEX_BORDER    #DEE2E6
-!define SIMPLEX_BG        #FFFFFF
+!$SIMPLEX_PRIMARY   = "#D9230F"
+!$SIMPLEX_BODY      = "#212529"
+!$SIMPLEX_BG        = "#FFFFFF"
+!$SIMPLEX_WHITE     = "#FFFFFF"
 
-' ===== Base =====
-skinparam backgroundColor SIMPLEX_BG
-skinparam shadowing false
+!ifndef $FONT_NAME
+  !$FONT_NAME = "Inter, Segoe UI, Roboto, Helvetica, Arial"
+!endif
 
-' ===== Defaults =====
-skinparam default {
-  FontColor SIMPLEX_BODY
-  FontName "Inter, Segoe UI, Roboto, Helvetica, Arial"
-  FontSize 12
+!ifndef $FONT_NAME_MONOSPACED
+  !$FONT_NAME_MONOSPACED = "Courier"
+!endif
+
+<style>
+  root {
+    BackgroundColor $SIMPLEX_BG
+    FontColor $SIMPLEX_BODY
+    FontName $FONT_NAME
+    HyperLinkColor $SIMPLEX_PRIMARY
+    LineColor $SIMPLEX_BODY
+    LineThickness 1
+    Margin 5
+  }
+  document {
+    title {
+      FontSize 22
+      LineThickness 0
+    }
+  }
+  groupHeader {
+    BackgroundColor $SIMPLEX_PRIMARY
+    FontColor $SIMPLEX_WHITE
+    FontStyle bold
+  }
+  referenceHeader {
+    BackgroundColor $SIMPLEX_PRIMARY
+    FontColor $SIMPLEX_WHITE
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor $SIMPLEX_PRIMARY
+    FontColor $SIMPLEX_WHITE
+    FontStyle bold
+  }
+</style>
+
+skinparam ArrowLollipopColor $SIMPLEX_BODY
+skinparam BackgroundColor $SIMPLEX_BG
+skinparam DefaultFontName $FONT_NAME
+skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
+skinparam LifelineStrategy solid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor $SIMPLEX_BODY
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor $SIMPLEX_BG
+  BarColor $SIMPLEX_PRIMARY
+  BorderColor $SIMPLEX_BODY
+  FontColor $SIMPLEX_BODY
 }
-
-' ===== Titles =====
-skinparam title {
-  FontColor SIMPLEX_BODY
-  FontSize 18
-  FontName "Inter-Bold, Segoe UI-Bold, Roboto-Bold, Helvetica-Bold, Arial-Bold"
-  BackgroundColor SIMPLEX_BG
-  BorderColor SIMPLEX_BORDER
+skinparam Class {
+  BackgroundColor $SIMPLEX_BG
+  BorderColor $SIMPLEX_BODY
+  FontColor $SIMPLEX_BODY
 }
-
-' ===== Actors & Use Cases =====
-skinparam actor {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_PRIMARY
+skinparam Note {
+  FontColor $SIMPLEX_BODY
+  BorderColor $SIMPLEX_BODY
 }
-skinparam usecase {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_PRIMARY
+skinparam Package {
+  BorderColor $SIMPLEX_BODY
+  FontColor $SIMPLEX_BODY
 }
-
-' ===== Activities & Partitions =====
-skinparam activity {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_INFO
-  BarColor SIMPLEX_PRIMARY
-  ArrowColor SIMPLEX_BODY
-}
-skinparam partition {
-  BackgroundColor SIMPLEX_BG
-  BorderColor SIMPLEX_LIGHT
-}
-
-' ===== Sequence Diagram =====
-skinparam sequence {
-  ParticipantBackgroundColor SIMPLEX_LIGHT
-  ParticipantBorderColor SIMPLEX_PRIMARY
-  LifeLineBorderColor SIMPLEX_INFO
-  LifeLineBackgroundColor SIMPLEX_SECONDARY
-  GroupBackgroundColor SIMPLEX_LIGHT
-  GroupBorderColor SIMPLEX_PRIMARY
-  ReferenceBackgroundColor SIMPLEX_LIGHT
-  ReferenceBorderColor SIMPLEX_BODY
-  ArrowColor SIMPLEX_BODY
-  DividerBackgroundColor SIMPLEX_PRIMARY
-  DividerBorderColor SIMPLEX_PRIMARY
-  DividerFontColor #FFFFFF
-  ActorBorderColor SIMPLEX_PRIMARY
-  ActorBackgroundColor SIMPLEX_LIGHT
-  NoteBackgroundColor SIMPLEX_LIGHT
-  NoteBorderColor SIMPLEX_BORDER
-  NoteFontColor SIMPLEX_BODY
-}
-
-' ===== Other Elements =====
-skinparam rectangle {
-  BackgroundColor SIMPLEX_LIGHT
-  BorderColor SIMPLEX_PRIMARY
-  FontColor SIMPLEX_BODY
+skinparam State {
+  BackgroundColor $SIMPLEX_BG
+  BorderColor $SIMPLEX_BODY
 }
