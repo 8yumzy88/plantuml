@@ -187,7 +187,7 @@ skinparam stereotype {
   CFontColor<<dark>> #FFFFFF
 }
 
-' ===== Misc =====
+' ===== Misc ======
 skinparam Rectangle {
   BackgroundColor SIMPLEX_LIGHT
   BorderColor SIMPLEX_BORDER
