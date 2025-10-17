@@ -219,7 +219,7 @@ skinparam sequence {
 	''
 	DelayFontColor $DARK
 	''
-	LifeLineBorderColor $GRAY
+	LifeLineBorderColor $DARK
 	LifeLineBorderThickness 2
 	LifeLineBackgroundColor $LIGHT_DARK
 	''
