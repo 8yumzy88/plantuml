@@ -19,7 +19,7 @@ skinparam backgroundColor $BGCOLOR
 !$WHITE = "#FFF"
 !$GRAY_LIGHT = "#222"
 !$GRAY = "#868e96"
-!$PRIMARY = "#EC7211"
+!$PRIMARY = "#C94D00"
 !$SECONDARY = "#FFFFFF"
 !$SUCCESS = "#1D8102"
 !$INFO = "#0073bb"
