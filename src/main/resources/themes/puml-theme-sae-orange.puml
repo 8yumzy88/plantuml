@@ -163,7 +163,7 @@ skinparam swimlane {
 ' 	LineThickness 1.5
 ' 	FontColor $PRIMARY_TEXT
 ' 	LineColor $PRIMARY_DARK
-' 	BackGroundColor $PRIMARY_LIGHT-$PRIMARY
+' 	BackGroundColor $PRIMARY_DARK-$PRIMARY
 ' 	$primary_scheme()
 ' }
 ' </style>
