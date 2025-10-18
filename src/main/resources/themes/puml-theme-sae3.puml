@@ -1,5 +1,5 @@
 ---
-name: sae3
+name: sae3-updated
 display_name: SAE Simplex Light
 description: A light theme based on the Bootswatch Simplex color palette
 author: Revvity Security Architecture & Engineering
@@ -44,8 +44,24 @@ author: Revvity Security Architecture & Engineering
       LineThickness 0
     }
 
-    ' ---- Footer: ensure no visible box, shadow, or background ----
+    ' ---- Footer: NO BOX ----
     footer {
+      BackgroundColor transparent
+      BorderColor transparent
+      BorderThickness 0
+      LineColor transparent
+      LineThickness 0
+      Shadowing false
+      RoundCorner 0
+      Padding 0
+      Margin 0
+      FontName $FONT_NAME
+      FontColor $SIMPLEX_BODY
+      FontSize 10
+    }
+    
+    ' ---- Caption: NO BOX ----
+    caption {
       BackgroundColor transparent
       BorderColor transparent
       BorderThickness 0
@@ -79,12 +95,8 @@ author: Revvity Security Architecture & Engineering
     FontStyle bold
   }
 
+  ' ---- Legend: KEEP BOX (default styling) ----
   legend {
-    BackgroundColor transparent
-    BorderColor transparent
-    Shadowing false
-    RoundCorner 0
-    Padding 2
     FontName $FONT_NAME
     FontColor $SIMPLEX_BODY
   }
@@ -103,7 +115,7 @@ skinparam SequenceLifeLineBorderColor $SIMPLEX_BODY
 skinparam Shadowing false
 skinparam UseBetaStyle true
 
-' ---- Ensure no visible footer box in both styles ----
+' ---- NO BOX on Footer/Caption ----
 skinparam FooterBackgroundColor transparent
 skinparam FooterBorderColor transparent
 skinparam FooterBorderThickness 0
@@ -114,6 +126,7 @@ skinparam FooterFontSize 10
 skinparam FooterFontName $FONT_NAME
 skinparam CaptionBackgroundColor transparent
 skinparam CaptionBorderColor transparent
+skinparam CaptionBorderThickness 0
 
 skinparam Activity {
   BackgroundColor $SIMPLEX_BG
