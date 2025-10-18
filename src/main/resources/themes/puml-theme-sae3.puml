@@ -84,3 +84,13 @@ skinparam State {
   BackgroundColor $SIMPLEX_BG
   BorderColor $SIMPLEX_BODY
 }
+<style>
+  footer {
+    BackgroundColor transparent
+    BorderColor none
+    Shadowing false
+    Padding 0
+    FontColor $SIMPLEX_BODY
+    FontName $FONT_NAME
+  }
+</style>
