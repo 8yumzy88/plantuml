@@ -44,10 +44,10 @@ author: Revvity Security Architecture & Engineering
       LineThickness 0
     }
 
-    ' ---- Footer: remove box, shadow, and background ----
+    ' ---- Footer: ensure no visible box, shadow, or background ----
     footer {
       BackgroundColor transparent
-      BorderColor none
+      BorderColor transparent
       Shadowing false
       RoundCorner 0
       Padding 0
@@ -77,7 +77,7 @@ author: Revvity Security Architecture & Engineering
 
   legend {
     BackgroundColor transparent
-    BorderColor none
+    BorderColor transparent
     Shadowing false
     RoundCorner 0
     Padding 2
@@ -99,11 +99,11 @@ skinparam SequenceLifeLineBorderColor $SIMPLEX_BODY
 skinparam Shadowing false
 skinparam UseBetaStyle true
 
-' ---- Remove visible footer box in both styles ----
+' ---- Ensure no visible footer box in both styles ----
 skinparam FooterBackgroundColor transparent
-skinparam FooterBorderColor none
+skinparam FooterBorderColor transparent
 skinparam CaptionBackgroundColor transparent
-skinparam CaptionBorderColor none
+skinparam CaptionBorderColor transparent
 
 skinparam Activity {
   BackgroundColor $SIMPLEX_BG
