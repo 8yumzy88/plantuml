@@ -2,14 +2,20 @@
 name: sae3
 display_name: SAE Simplex Light
 description: A light theme based on the Bootswatch Simplex color palette
-author: [Your Name]
+author: Revvity Security Architecture & Engineering
 ---
 
+' --------------------------------------------------------
+' Color Palette
+' --------------------------------------------------------
 !$SIMPLEX_PRIMARY   = "#C94D00"
 !$SIMPLEX_BODY      = "#212529"
 !$SIMPLEX_BG        = "#FFFFFF"
 !$SIMPLEX_WHITE     = "#FFFFFF"
 
+' --------------------------------------------------------
+' Font Settings
+' --------------------------------------------------------
 !ifndef $FONT_NAME
   !$FONT_NAME = "Inter, Segoe UI, Roboto, Helvetica, Arial"
 !endif
@@ -18,6 +24,9 @@ author: [Your Name]
   !$FONT_NAME_MONOSPACED = "Courier"
 !endif
 
+' --------------------------------------------------------
+' Style Definitions (Beta Style System)
+' --------------------------------------------------------
 <style>
   root {
     BackgroundColor $SIMPLEX_BG
@@ -28,29 +37,58 @@ author: [Your Name]
     LineThickness 1
     Margin 5
   }
+
   document {
     title {
       FontSize 22
       LineThickness 0
     }
+
+    ' ---- Footer: remove box, shadow, and background ----
+    footer {
+      BackgroundColor transparent
+      BorderColor none
+      Shadowing false
+      RoundCorner 0
+      Padding 0
+      FontName $FONT_NAME
+      FontColor $SIMPLEX_BODY
+      FontSize 10
+    }
   }
+
   groupHeader {
     BackgroundColor $SIMPLEX_PRIMARY
     FontColor $SIMPLEX_WHITE
     FontStyle bold
   }
+
   referenceHeader {
     BackgroundColor $SIMPLEX_PRIMARY
     FontColor $SIMPLEX_WHITE
     FontStyle bold
   }
+
   separator {
     BackgroundColor $SIMPLEX_PRIMARY
     FontColor $SIMPLEX_WHITE
     FontStyle bold
   }
+
+  legend {
+    BackgroundColor transparent
+    BorderColor none
+    Shadowing false
+    RoundCorner 0
+    Padding 2
+    FontName $FONT_NAME
+    FontColor $SIMPLEX_BODY
+  }
 </style>
 
+' --------------------------------------------------------
+' SkinParams (Classic compatibility)
+' --------------------------------------------------------
 skinparam ArrowLollipopColor $SIMPLEX_BODY
 skinparam BackgroundColor $SIMPLEX_BG
 skinparam DefaultFontName $FONT_NAME
@@ -61,36 +99,36 @@ skinparam SequenceLifeLineBorderColor $SIMPLEX_BODY
 skinparam Shadowing false
 skinparam UseBetaStyle true
 
+' ---- Remove visible footer box in both styles ----
+skinparam FooterBackgroundColor transparent
+skinparam FooterBorderColor none
+skinparam CaptionBackgroundColor transparent
+skinparam CaptionBorderColor none
+
 skinparam Activity {
   BackgroundColor $SIMPLEX_BG
   BarColor $SIMPLEX_PRIMARY
   BorderColor $SIMPLEX_BODY
   FontColor $SIMPLEX_BODY
 }
+
 skinparam Class {
   BackgroundColor $SIMPLEX_BG
   BorderColor $SIMPLEX_BODY
   FontColor $SIMPLEX_BODY
 }
+
 skinparam Note {
   FontColor $SIMPLEX_BODY
   BorderColor $SIMPLEX_BODY
 }
+
 skinparam Package {
   BorderColor $SIMPLEX_BODY
   FontColor $SIMPLEX_BODY
 }
+
 skinparam State {
   BackgroundColor $SIMPLEX_BG
   BorderColor $SIMPLEX_BODY
 }
-<style>
-  footer {
-    BackgroundColor transparent
-    BorderColor none
-    Shadowing false
-    Padding 0
-    FontColor $SIMPLEX_BODY
-    FontName $FONT_NAME
-  }
-</style>
