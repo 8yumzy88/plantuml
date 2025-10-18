@@ -48,9 +48,13 @@ author: Revvity Security Architecture & Engineering
     footer {
       BackgroundColor transparent
       BorderColor transparent
+      BorderThickness 0
+      LineColor transparent
+      LineThickness 0
       Shadowing false
       RoundCorner 0
       Padding 0
+      Margin 0
       FontName $FONT_NAME
       FontColor $SIMPLEX_BODY
       FontSize 10
@@ -102,6 +106,12 @@ skinparam UseBetaStyle true
 ' ---- Ensure no visible footer box in both styles ----
 skinparam FooterBackgroundColor transparent
 skinparam FooterBorderColor transparent
+skinparam FooterBorderThickness 0
+skinparam FooterLineColor transparent
+skinparam FooterLineThickness 0
+skinparam FooterFontColor $SIMPLEX_BODY
+skinparam FooterFontSize 10
+skinparam FooterFontName $FONT_NAME
 skinparam CaptionBackgroundColor transparent
 skinparam CaptionBorderColor transparent
 
